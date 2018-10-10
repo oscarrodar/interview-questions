@@ -2,6 +2,10 @@
 // Matrix have repeated numbers 
 // and 1 of the numbers is missing 
 
+function generateRandomInt(min, max) {
+  return Math.floor(Math.random() * max + min); 
+}
+
 function generateEmptyMatrix(rowSize, columnSize) {
   var matrix = [];
   for (var i = 0; i < rowSize; i++) {
@@ -12,10 +16,6 @@ function generateEmptyMatrix(rowSize, columnSize) {
   }
 
   return matrix;
-}
-
-function generateRandomInt(min, max) {
-  return Math.floor(Math.random() * max + min); 
 }
 
 function generateFilledMatrixRandomly(matrixSize, minValue, maxValue) {
@@ -53,3 +53,4 @@ function getRowSize(matrix) {
 function getColumnSize(matrix) {
   return matrix[0].length;
 }
+
