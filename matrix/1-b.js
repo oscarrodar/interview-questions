@@ -1,16 +1,6 @@
-function generateFilledMatrixOrderAsc(rowSize, columnSize) {
-  var counter = 0;
-  var matrix = [];
-  for (var i = 0; i < rowSize; i++) {
-    matrix[i] = [];
-    for (var j = 0; j < columnSize; j++) {
-      counter += 1;
-      matrix[i][j] = counter;
-    }
-  }
-
-  return matrix;
-}
+// Assumption 2 
+// Matrix have repeated numbers 
+// and 1 of the numbers is missing 
 
 function generateEmptyMatrix(rowSize, columnSize) {
   var matrix = [];
